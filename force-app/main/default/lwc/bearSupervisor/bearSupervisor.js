@@ -7,7 +7,7 @@ const bearFields = [SUPERVISOR_FIELD];
 
 export default class BearSupervisor extends LightningElement {
     @api recordId; //Bear Id
-    @wire(getRecord, { recordId: '@recordId', fields: bearFields })
+    @wire(getRecord, { recordId: '$recordId', fields: bearFields })
     bear;
 
     get supervisorId(){
